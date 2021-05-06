@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>la salud</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/responsive-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">
+                            <a href="index.html"><h1>la armonía</h1></a>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation"><a href="index.html">Inicio</a></li>
+                            <li role="presentation"><a href="policy.html">Política de privacidad</a></li>
+                            <li role="presentation"><a href="blog.html">Artículo</a></li>
+                            <li role="presentation"><a href="terms.html">Términos y condiciones</a></li>
+                            <li role="presentation"><a href="contact.html">Contactos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="col-lg-6">
+        <form class="form-horizontal" role="form" action="thanks.html">
+            <div class="form-group">
+
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" placeholder="El nombre de">
+                </div>
+            </div>
+            <div class="form-group">
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control"  placeholder="El número de teléfono">
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="8"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+					<input type="checkbox" name="terms" value="check" required=""/>
+					<a href="policy.html" target="_blank">
+						He leído y estoy de acuerdo con los términos del acuerdo de usuario
+					</a>
+
+					<button type="submit" class="btn btn-default">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+
+<hr>
+
+<!--start footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="widget">
+
+                    <ul class="link-list">
+                        <li><a href="terms.html">Términos y condiciones</a></li>
+                        <li><a href="policy.html">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="copyright">
+                        <p>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                            All rights reserved
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!--end footer-->
+<div class='cookie-banner'>
+    <p>
+        El sitio web utiliza "cookies". Permiten identificarlo y recibir su información de la experiencia del usuario.Continuando con la navegación de la web, estoy de acuerdo con el uso de las cookies, el propietario del sitio de conformidad con  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Política de cookies</a>
+    </p>
+    <button class='close-cookie'>&times;</button>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/responsive-slider.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    wow = new WOW(
+        {})
+        .init();
+</script>
+
+
+<script>
+    window.onload = function () {
+        $('.close-cookie').click(function () {
+            $('.cookie-banner').fadeOut();
+        })
+    }
+</script>
+<script>
+    let elems = document.querySelectorAll('.server-name');
+    elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname
+    })
+</script>
+</body>
+</html>
